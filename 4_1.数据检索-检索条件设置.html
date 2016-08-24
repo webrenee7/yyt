@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>数据检索-检索条件设置</title>
+<link href="res/css/css.css" type="text/css" rel="stylesheet" />
+<script src="res/js/index.js"></script>
+</head>
+
+<body>
+	<div class="page_nav">
+    	<ul>
+        	<li>
+            	<a href="" class="icon1">系统首页</a>
+            </li>
+            <li>
+            	<a href="" class="icon2">个人中心</a>
+            </li>
+            <li>
+            	<a href="" class="icon3">系统通知（<span class="red">5</span>）</a>
+            </li>
+            <li>
+            	<a href="" class="icon4">退出系统</a>
+            </li>
+        </ul>
+    </div>
+    <div class="page_logo"></div>
+    <div class="page_cont">
+        <div class="top_path">
+            <div class="current left">
+                当前位置：<a href="">数据检索</a>>检索条件设置
+            </div>
+            <div class="top_btn right">
+            	<input type="button" class="btn" value="立即执行" />
+                <input type="button" class="btn" value="保存" />
+                <input type="button" class="btn" value="删除" />
+                <input type="button" class="btn" value="返回" />
+            </div>
+        </div>
+        <div class="cont_wrapper">
+            <div class="menu_box bg">
+                <ul id="menu_list">
+                    <li>
+                        <span><a href="" class="icon1">病例列表</a></span>
+                    </li>
+                    <li class="cur">
+                        <span><a href="" class="icon2">数据检索</a></span>
+                    </li>
+                    <li>
+                        <span><a href="" class="icon3">数据统计</a></span>
+                    </li>
+                    <li>
+                        <span><a href="" class="icon4">导出设置</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="cont_box bg">
+                <div class="info_box">
+                	<div class="search_line">
+                    	<div class="search_one">
+                        	<label>检索任务名称：</label>
+                            <input type="text" class="txt" />
+                        </div>
+                        <div class="search_one">
+                        	<label>检索任务备注：</label>
+                            <input type="text" class="txt" />
+                        </div>
+                    </div>
+                    <div class="search_factor">
+                        <div class="btn_box">
+                            <input type="button" class="btn" value="新增条件" />
+                            <input type="button" class="btn" value="清除全部" />
+                        </div> 
+                    	<table>
+                        	<thead>
+                           		<tr>
+                            		<th width="8%">序号</th>
+                                    <th width="10%">与或非逻辑词</th>
+                                    <th width="15%">数据集</th>
+                                    <th width="15%">子数据集</th>
+                                    <th width="20%">字段名称</th>
+                                    <th width="12%">判断条件</th>
+                                    <th width="12%">检索内容</th>
+                                    <th width="8%">删除</th>
+                            	</tr>
+                            </thead>
+                            <tbody>
+                            	<tr>
+                                	<td>1</td>
+                                    <td>
+                                    	<select>
+                                        	<option>与</option>
+                                            <option>或</option>
+                                            <option>非</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                    	<select>
+                                        	<option>基本信息</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                    	<select>
+                                        	<option>基本信息</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                    	<select>
+                                        	<option>年龄</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                    	<select>
+                                        	<option>等于</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                    	<input type="text" class="txt" />
+                                    </td>
+                                    <td><a href="" class="red">删除</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>    
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

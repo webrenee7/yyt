@@ -1,0 +1,221 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ font:14px/24px "Microsoft YaHei","微软雅黑"; color:#333; background-color:#277ac1; word-wrap:break-word; min-width:1024px;}
+*{ margin:0; padding:0;}
+ul,ol,li{ list-style:none outside;}
+a{ color:#333; text-decoration:none;}
+h1,h2,h3,h4,h5,h6{ font-size:1em;}
+.left{ float:left;}
+.right{ float:right;}
+.center{ text-align:center;}
+.tx_l{ text-align:left;}
+.tx_r{ text-align:right;}
+img{ border:medium none; vertical-align:middle;}
+textarea{ resize:none; vertical-align:middle;}
+input,button,select,textarea{ border:medium none; background:none; outline:none; font:1em/normal "Microsoft YaHei","微软雅黑";}
+.btn{ cursor:pointer; color:#fff; background-color:#0086d7; border-radius:8px; height:32px; font-size:18px;}
+.btn:hover{ background-color:#0069a8;}
+.clearfix:after{ content:"."; display:block; clear:both; height:0; line-height:0; font-size:0; visibility:hidden;}
+.bg_gray,.bg_gray th{ background-color:#f2f2f2;}
+.red{ color:#ff0000}
+.txt{ height:32px; line-height:32px; border:1px solid #999; background-color:#fff; font-size:18px; color:#333; padding:0 10px; box-sizing:border-box;}
+table{ width:100%; table-layout:fixed; border-collapse:collapse; background-color:#fff;}
+table a{ color:#0033ff; text-decoration:underline;}
+th{ font-weight:normal; background-color:#ddeaf7;}
+th,td,caption{ border:1px solid #e5e5e5; padding:12px 10px; height:24px;}
+td{ overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.tb_box td{ text-align:center;}
+.tb_box th:first-child,.tb_box td:first-child{ border-left:none;}
+.tb_box th:last-child,.tb_box td:last-child{ border-right:none;}
+input[type="checkbox"],input[type="radio"]{ -webkit-appearance:none; width:19px; height:19px; border:1px solid #666;}
+input[type="checkbox"]:checked{ background:url(../images/check_on.jpg) no-repeat center center; border:none;}
+input[type="radio"]{ border-radius:50%;}
+input[type="radio"]:checked{ background:url(../images/radio_on.jpg) no-repeat center center; border:none;}
+
+
+/*分页*/
+.pagination{ text-align:center; padding:26px 0 30px;}
+.pagination ul{ display:inline-block;}
+.pagination ul li{ float:left;}
+.pagination ul li a{ display:block; padding:10px 24px; font-size:18px; border:1px solid #ccc; border-radius:8px; margin:0 10px; color:#999; background: -webkit-linear-gradient(bottom, #edebeb, #fff); background:-moz-linear-gradient(bottom, #edebeb, #fff); background:-0-linear-gradient(bottom, #edebeb, #fff);}
+.pagination ul li a.cur{ color:#333; background: -webkit-linear-gradient(top, #edebeb, #fff); background:-moz-linear-gradient(top, #edebeb, #fff); background:-0-linear-gradient(top, #edebeb, #fff);}
+
+
+/*登录*/
+.login_bg{ background:url(../images/login_bd.jpg) no-repeat center top #f7f9fa; background-size:cover;}
+.login_box{ width:375px; height:610px; padding:0 60px; background:url(../images/login_bg.png) no-repeat; position:absolute; top:50%; left:50%; margin-top:-305px; margin-left:-247.5px;}
+.login_tit{ font-size:32px; line-height:42px; color:#1e1e1e; padding-top:230px; text-align:center; margin-bottom:28px;}
+.login_input{ margin-bottom:19px; padding-left:60px; height:54px;}
+.login_input input{ width:269px; height:54px; line-height:54px; color:#1e1e1e; padding:0 23px; font-size:18px;}
+.login_btn_box{ text-align:center;}
+.login_btn{ width:375px; height:55px; background:url(../images/login_btn.png) no-repeat; font-size:18px;}
+
+
+/*项目列表*/
+.page_nav{ height:30px; line-height:30px; background-color:#ccc; text-align:right;}
+.page_nav ul{ display:inline-block;}
+.page_nav ul li{ float:left;}
+.page_nav ul li a{ display:inline-block; color:#000; padding-left:25px; background:url(../images/nav_icon.png) no-repeat; margin-right:20px;}
+.page_nav ul li a.icon1{ background-position:0 0;}
+.page_nav ul li a.icon2{ background-position:-98px 0;}
+.page_nav ul li a.icon3{ background-position:-196px 0;}
+.page_nav ul li a.icon4{ background-position:-329px 0;}
+.page_logo{ height:74px; background:#1366c2 url(../images/logo.jpg) no-repeat left center;}
+.page_cont{ background-color:#f2f2f1; padding:0.5%; margin:1%;}
+.top_path,.patient_info,.top_here{ height:32px; line-height:32px; border-radius:8px; border:1px solid #cfe1f1; background-color:#fff; margin-bottom:6px; padding:0 15px;}
+.current{ font-size:16px; color:#000;}
+.cont_box{ background-color:#fff; border-radius:8px; border:1px solid #cfe1f1; font-size:18px; overflow-y:auto;}
+.top_search{ background-color:#fff; border-top-left-radius:8px; border-top-right-radius:8px; line-height:32px; padding:8px 0 0 15px;}
+.num_box{ float:left; padding-bottom:8px;}
+.num_box span{ color:#ed7d31;}
+.search_box{ float:right;}
+.search_input,.btn_box{ float:left; padding-bottom:8px; height:32px;}
+.search_input div{ float:left; margin-right:15px;}
+.search_input label{ float:left;}
+.search_input .txt{ float:left; width:136px;}
+.search_input span{ float:left; margin:0 5px;}
+.btn_box{ margin-right:15px;}
+.btn_box .btn{ width:90px;}
+.right_btn{ float:right;}
+.right_btn .btn{ width:112px; margin-top:6px;}
+
+
+/*病例列表*/
+.cont_wrapper{ position:relative; padding-left:15%;}
+.menu_box{ position:absolute; left:0; width:14.5%; min-width:200px; background-color:#9cbde1; border-radius:8px; overflow-y:auto;}
+.menu_box ul{ margin:3%;}
+.menu_box ul li{ margin-bottom:7px;}
+.menu_box ul li span{ display:block; height:60px; line-height:60px; background:url(../images/li_bg.png) no-repeat; background-size:100% 100%; padding-left:16%;}
+.menu_box ul li a{ display:block; background:url(../images/menu_icon.png) no-repeat; font-size:20px; color:#075d99; padding-left:53px;}
+.menu_box ul li a.icon1,.menu_box ul li.cur a.icon1{ background-position:0 15px;}
+.menu_box ul li a.icon2,.menu_box ul li.cur a.icon2{ background-position:0 -50px;}
+.menu_box ul li a.icon3,.menu_box ul li.cur a.icon3{ background-position:0 -117px;}
+.menu_box ul li a.icon4,.menu_box ul li.cur a.icon4{ background-position:0 -178px;}
+.menu_box ul li.cur span{ background:url(../images/li_on_bg.png) no-repeat; background-size:100% 100%;}
+.menu_box ul li.cur a{ background:url(../images/menu_icon_on.png) no-repeat; color:#fff;}
+.search_input .wid1{ width:100px;}
+
+
+/*病例列表-病例详细*/
+.patient_info{ background-color:#e6e4e4;}
+.patient_info ul li{ float:left; margin-right:20px; font-size:16px;}
+.patient_info ul li span{ color:#1366c2;}
+.case_box .drop{ padding-left:16%; cursor:pointer;}
+.case_box .drop a{ background:url(../images/drop_down.png) no-repeat left center; padding-left:10%;}
+.case_box ul li a{ background:none; padding-left:10%;}
+.case_box ul li.cur a{ background:none;}
+.case_box ul li.cur .drop a{/*父级菜单未展开样式*/ background:url(../images/drop_down_on.png) no-repeat left center; color:#fff;}
+.case_box ul li.cur .arrow_r a{/*父级菜单展开样式*/ background:url(../images/drop_on.png) no-repeat left center;}
+.case_box .drug_log{ margin:0 18%; display:none;}
+.case_box .drug_log ul,.case_box .drug_log li{ margin:0;}
+.case_box ul.drug_log li a{ line-height:50px; color:#4983ab; border-top:1px solid #789ac1; border-bottom:1px solid #a7c7eb; padding-left:20%; background:/*子菜单未展开样式*/url(../images/drop_down.png) no-repeat 9% 17px; cursor:pointer;}
+.case_box ul.drug_log li ul{ border-top:1px solid #789ac1; border-bottom:1px solid #a7c7eb; display:none;}
+.case_box ul.drug_log li:first-child a{ border-top:0;}
+.case_box ul.drug_log li:last-child a{ border-bottom:0;}
+.case_box ul.drug_log li ul li a{ line-height:32px; background:none; border:none; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.case_box ul.drug_log li ul li a:hover{ color:#fff;}
+.case_box ul.drug_log b{ font-size:26px; margin-right:5px;}
+.case_box ul.drug_log .arrow_r{/*子菜单展开样式*/ background:url(../images/drop_on.png) no-repeat 9% 21px; color:#fff;}
+.case_box ul.drug_log .cur ul a{ color:#4983ab; background:none;}
+.top_here{ height:54px; line-height:54px; font-size:18px;}
+.case_log{ text-align:center;}
+.case_log table{ margin-bottom:10px;}
+.case_log caption{ position:relative; background-color:#c3d9ee; text-align:left; border-bottom:0;}
+.case_log .btn_box{ position:absolute; right:0; top:8px; margin-right:10px;}
+
+
+/*病例列表-病例详细-病例信息编辑*/
+.case_log table:first-child input[type="text"],.case_log table:nth-child(2) input[type="text"]{ width:55%;}
+.case_log table .calendar{ vertical-align:3px; margin-left:5px;}
+.case_log table:nth-child(2) textarea{ height:94px;}
+.case_log .count_option li{ width:67px; margin-right:7%;}
+.case_log .txt{ width:100%; background:url(../images/txt.jpg) repeat-x;}
+.case_log .time_box{ position:relative; padding-right:48px;}
+
+
+/*数据检索*/
+.search_input .wid2{ width:400px;}
+
+
+/*数据检索-检索条件设置*/
+.search_factor{ position:relative;}
+.search_factor .btn_box{ position:absolute; right:0; top:-40px; margin-right:0;}
+.search_factor .btn_box .btn{ min-width:90px;}
+.search_factor th{ padding:8px 20px;}
+.search_factor td{ padding:8px 0; text-align:center;}
+.search_factor select{ width:100%;}
+.search_factor .txt{ width:100%; border:0;}
+
+
+/*数据导出-数据导出设置*/
+.search_line{ height:42px; margin:22px 0 47px;}
+.search_one{ position:relative; float:left; width:48%; padding-left:130px; box-sizing:border-box;}
+.search_one:first-child{ margin-right:4%;}
+.search_one label{ position:absolute; left:0; line-height:42px;}
+.search_one .txt{ width:100%; height:42px; background:url(../images/txt.jpg) repeat-x;}
+.field_box{ padding-bottom:30px;}
+.field_box th,.field_box td{ padding:8px 20px;}
+
+
+/*数据统计*/
+.info_box .top_search{ padding:0 0 0 5px;}
+.btn_box .long_btn{ width:144px; min-width:144px;}
+.btn_box .long_btn:first-child{ margin-left:50px;}
+.count_box table{ margin-bottom:10px;}
+.count_option li{ float:left; width:110px; margin-right:4%; line-height:42px;}
+
+
+/*个人中心*/
+.info_box{ padding:10px;}
+.personal_info table{ table-layout:inherit; margin-bottom:10px;}
+.personal_info th,.count_box th{ background-color:#c3d9ee; text-align:left;}
+.personal_info td{ padding:8px 10px;}
+.personal_info label{ margin:0 15px;}
+.personal_info .txt{ width:66%; background:url(../images/txt.jpg) repeat-x;}
+.personal_info [disabled]{ color:#666; background:url(../images/txt_disabled.jpg) repeat-x;}
+.personal_info .input_one{ margin:0 56px 0 0;}
+.input_one input{ margin-right:5px; vertical-align:-3px;}
+.save_btn{ padding:68px 0; text-align:center;}
+.save_btn .btn{ width:112px;}
+
+
+/*系统通知*/
+.menu_box ul li a.icon5,.menu_box ul li.cur a.icon5{ background-position:0 -245px;}
+.menu_box ul li a.icon6,.menu_box ul li.cur a.icon6{ background-position:0 -312px;}
+.no_read{ color:#000; font-weight:bold;}
+
+
+/*系统通知-系统通知详细*/
+.article_box{ padding:0 50px;}
+.article_tit{ text-align:center; border-bottom:1px dashed #ccc; margin-bottom:14px;}
+.article_tit h4{ font-size:20px; font-weight:normal; color:#000; padding:22px 0 20px;}
+.article_tit p{ font-size:12px; color:#999;}
+.article_info{ font-size:16px; color:#000; line-height:30px; border-bottom:1px dashed #ccc;}
+.article_info p{ text-indent:2em;}
+.article_info .center{ text-indent:0; padding:96px 0 133px;}
+.article_info .center img{ width:475px;}
+.article_flip{ height:24px; padding:8px 0 34px;}
+.article_flip p{ width:47%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-size:16px; color:#666;}
+.article_flip a{ color:#666;}
+.article_flip a:hover{ text-decoration:underline;}
+.top_btn .btn{ width:90px; height:26px; line-height:26px; font-size:16px; margin-top:3px;}
+
+
+@media screen and (max-width:1150px){
+	.search_input .txt{ width:100px;}
+	.btn_box .btn{ width:70px;}
+}
+
+@media screen and (max-width:1440px){
+	.cont_wrapper{ padding-left:210px;}
+	.menu_box ul li span{ padding-left:25px;}
+	.case_box ul li a{ padding-left:10px;}
+	.case_box .drop{ padding-left:15px;}
+	.case_box .drop a{ padding-left:20px;}
+	.case_box .drug_log{ margin:0 25px;}
+}
+@media screen and (max-width:1220px){
+	.search_input .wid2{ width:220px;}
+	.p_time{ margin-left:180px;}
+}

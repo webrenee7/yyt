@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>病例列表-病例详细</title>
+<link href="res/css/css.css" type="text/css" rel="stylesheet" />
+<script src="res/js/jquery.js"></script>
+<script src="res/js/index.js"></script>
+</head>
+
+<body>
+	<div class="page_nav">
+    	<ul>
+        	<li>
+            	<a href="" class="icon1">系统首页</a>
+            </li>
+            <li>
+            	<a href="" class="icon2">个人中心</a>
+            </li>
+            <li>
+            	<a href="" class="icon3">系统通知（<span class="red">5</span>）</a>
+            </li>
+            <li>
+            	<a href="" class="icon4">退出系统</a>
+            </li>
+        </ul>
+    </div>
+    <div class="page_logo"></div>
+    <div class="page_cont">
+        <div class="top_path">
+            <div class="current left">
+                当前位置：<a href="">病例列表</a>>病例详细信息
+            </div>
+            <div class="top_btn right">
+            	<input type="button" class="btn" value="新增">
+                <input type="button" class="btn" value="删除">
+                <input type="button" class="btn" value="编辑">
+                <input type="button" class="btn" value="返回">
+            </div>
+        </div>
+        <div class="patient_info">
+        	<ul>
+            	<li>患者编号：<span>20001231</span></li>
+                <li>患者姓名：<span>杜子腾</span></li>
+                <li>性别：<span>男</span></li>
+                <li>年龄：<span>81</span></li>
+                <li>诊断：<span>多发性骨髓瘤</span></li>
+                <li>医院：<span>中国人民解放军总医院</span></li>
+                <li>医生：<span>张尔洛</span></li>
+            </ul>
+        </div>
+        <div class="cont_wrapper">
+            <div class="menu_box case_box bg">
+                <ul id="menu_list">
+                    <li>
+                        <span><a href="">患者个人信息</a></span>
+                    </li>
+                    <li>
+                        <span><a href="">病史记录</a></span>
+                    </li>
+                    <li>
+                        <span><a href="">诊断信息</a></span>
+                    </li>
+                    <li>
+                        <span><a href="">检查记录</a></span>
+                    </li>
+                    <li class="cur">
+                        <span class="drop"><a>治疗记录</a></span>
+                        <ul class="drug_log">
+                        	<li>
+                            	<a>用药记录</a>
+                                <ul>
+                                	<li>
+                                        <a href="" title="2011-06-23"><b>•</b>2011-06-23</a>
+                                    </li>
+                                    <li>
+                                        <a href="" title="2011-06-24"><b>•</b>2011-06-24</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                            	<a>用药记录</a>
+                                <ul>
+                                	<li>
+                                        <a href="" title="2011-06-23"><b>•</b>2011-06-23</a>
+                                    </li>
+                                    <li>
+                                        <a href="" title="2011-06-24"><b>•</b>2011-06-24</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                            	<a>用药记录</a>
+                                <ul>
+                                	<li>
+                                        <a href="" title="2011-06-23"><b>•</b>2011-06-23</a>
+                                    </li>
+                                    <li>
+                                        <a href="" title="2011-06-24"><b>•</b>2011-06-24</a>
+                                    </li>
+                                    <li>
+                                        <a href="" title="2011-06-24"><b>•</b>2011-06-24</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span><a href="">不良事件记录</a></span>
+                    </li>
+                    <li>
+                        <span><a href="">死亡记录</a></span>
+                    </li>
+                </ul>
+                <script>	
+					$(".drop,.drug_log li a").click(function(){
+						$(this).next("ul").toggle();
+						$(this).not(".drug_log ul li a").toggleClass("arrow_r");	
+					})
+                </script>
+            </div>
+            <div class="top_here">治疗记录-用药记录</div>
+            <div class="cont_box bg">
+            	<div class="info_box"> 
+                    <div class="case_log">
+                        <table>
+                        	<caption>
+                            	用药记录  2011-06-24
+                                <div class="btn_box">
+                                    <input type="button" class="btn" value="编辑" />
+                                </div>  
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th width="25%">字段名称</th>
+                                    <th width="45%">字段值</th>
+                                    <th width="30%">备注</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>药物通用名</td>
+                                    <td>伊马替尼</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>用药开始日期</td>
+                                    <td>2016-02-24</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>用药剂量</td>
+                                    <td>500</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                        	<caption>***字段组</caption>
+                            <tbody>
+                                <tr>
+                                    <td width="25%">用药频率</td>
+                                    <td width="45%">2</td>
+                                    <td width="30%"></td>
+                                </tr>
+                                <tr>
+                                    <td>频率单位</td>
+                                    <td>次/日</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>用药途径</td>
+                                    <td>口服</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>用药疗程</td>
+                                    <td>3</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>疗效</td>
+                                    <td>CR</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                        	<caption>
+                            	肝功能检查
+                                <div class="btn_box">
+                                    <input type="button" class="btn" value="编辑" />
+                                </div>  
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th width="14%">检查日期</th>
+                                    <th width="14%">检查结果</th>
+                                    <th width="18%">AST（μmol/L）</th>
+                                    <th width="18%">ALT（μmol/L）</th>
+                                    <th width="18%">TP(g/L）</th>
+                                    <th width="18%">血糖（mmol/L）</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2016-07-01</td>
+                                    <td>正常</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>2016-07-02</td>
+                                    <td>正常</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>2016-07-03</td>
+                                    <td>正常</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                        	<caption>
+                            	生化检查
+                                <div class="btn_box">
+                                    <input type="button" class="btn" value="编辑" />
+                                </div>  
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th width="19%">检查项目</th>
+                                    <th width="25%">检查结果</th>
+                                    <th width="32%">临床意义</th>
+                                    <th width="24%">NCI分级</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>AST</td>
+                                    <td>20</td>
+                                    <td>异常无临床意义</td>
+                                    <td>1级</td>
+                                </tr>
+                                <tr>
+                                    <td>AST</td>
+                                    <td>21</td>
+                                    <td>正常无临床意义</td>
+                                    <td>2级</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                        	<caption>
+                            	图片/资料上传
+                                <div class="btn_box">
+                                    <input type="button" class="btn" value="编辑" />
+                                </div>  
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th width="8%">序号</th>
+                                    <th width="46%">名称</th>
+                                    <th width="17%">分类</th>
+                                    <th width="16%">上传时间</th>
+                                    <th width="13%">查看</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                	<td>1</td>
+                                    <td>第一次肝功能检查</td>
+                                    <td>jpg</td>
+                                    <td>2016-07-01</td>
+                                    <td><a href="">查看</a></td>
+                                </tr>
+                                <tr>
+                                	<td>2</td>
+                                    <td>第二次肝功能检查</td>
+                                    <td>png</td>
+                                    <td>2016-07-01</td>
+                                    <td><a href="">查看</a></td>
+                                </tr>
+                                <tr>
+                                	<td>3</td>
+                                    <td>第三次肝功能检查</td>
+                                    <td>pdf</td>
+                                    <td>2016-07-01</td>
+                                    <td><a href="">查看</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> 
+                </div>    
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
